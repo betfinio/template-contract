@@ -7,7 +7,6 @@ A Foundry-based template for developing Solidity smart contracts, with sensible 
 - [Forge](https://github.com/foundry-rs/foundry/blob/master/forge): compile, test, fuzz, format, and deploy smart
   contracts
 - [Forge Std](https://github.com/foundry-rs/forge-std): collection of helpful contracts and utilities for testing
-- [Prettier](https://github.com/prettier/prettier): code formatter for non-Solidity files
 - [Solhint](https://github.com/protofire/solhint): linter for Solidity code
 
 ## Getting Started
@@ -21,7 +20,7 @@ Or, if you prefer to install the template manually:
 $ mkdir my-project
 $ cd my-project
 $ forge init --template betfinio/template-contract
-$ bun install # install Solhint, Prettier, and other Node.js deps
+$ bun install # install Solhint, and other Node.js deps
 ```
 
 If this is your first time with Foundry, check out the
@@ -44,8 +43,6 @@ following files:
 ```text
 ├── .editorconfig
 ├── .gitignore
-├── .prettierignore
-├── .prettierrc.yml
 ├── .solhint.json
 ├── foundry.toml
 └── remappings.txt
