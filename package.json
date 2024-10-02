@@ -30,6 +30,6 @@
 		"lint:sol": "forge fmt --check && bun solhint \"{script,src,test}/**/*.sol\"",
 		"test": "forge test",
 		"test:coverage": "forge coverage",
-		"test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage"
+		"test:coverage:report": "forge coverage --report lcov"
 	}
 }
