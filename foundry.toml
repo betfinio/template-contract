@@ -27,5 +27,4 @@ libs = ["node_modules", "lib"]
   wrap_comments = true
 
 [rpc_endpoints]
-  mainnet = "https://137.rpc.thirdweb.com"
-  testnet = "https://80002.rpc.thirdweb.com"
+  rpc = "${RPC}"

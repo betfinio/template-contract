@@ -20,4 +20,6 @@ broadcast/*
 broadcast/*/31337/
 
 
+.env
+
 deno/
