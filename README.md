@@ -1,24 +1,19 @@
 # Foundry Template for Betfin Contracts
 
-A Foundry-based template for developing Solidity smart contracts, with sensible
-defaults for Betfin Infrastructure.
+A Foundry-based template for developing Solidity smart contracts, with sensible defaults for Betfin Infrastructure.
 
 ## What's Inside
 
-- [Forge](https://github.com/foundry-rs/foundry/blob/master/forge): compile,
-  test, fuzz, format, and deploy smart contracts
-- [Forge Std](https://github.com/foundry-rs/forge-std): collection of helpful
-  contracts and utilities for testing
-- [Prettier](https://github.com/prettier/prettier): code formatter for
-  non-Solidity files
+- [Forge](https://github.com/foundry-rs/foundry/blob/master/forge): compile, test, fuzz, format, and deploy smart
+  contracts
+- [Forge Std](https://github.com/foundry-rs/forge-std): collection of helpful contracts and utilities for testing
+- [Prettier](https://github.com/prettier/prettier): code formatter for non-Solidity files
 - [Solhint](https://github.com/protofire/solhint): linter for Solidity code
 
 ## Getting Started
 
-Click the
-[`Use this template`](https://github.com/betfinio/template-contract/generate)
-button at the top of the page to create a new repository with this repo as the
-initial state.
+Click the [`Use this template`](https://github.com/betfinio/template-contract/generate) button at the top of the page to
+create a new repository with this repo as the initial state.
 
 Or, if you prefer to install the template manually:
 
@@ -34,19 +29,17 @@ If this is your first time with Foundry, check out the
 
 ## Features
 
-This template builds upon the frameworks and libraries mentioned above, so
-please consult their respective documentation for details about their specific
-features.
+This template builds upon the frameworks and libraries mentioned above, so please consult their respective documentation
+for details about their specific features.
 
-For example, if you're interested in exploring Foundry in more detail, you
-should look at the [Foundry Book](https://book.getfoundry.sh/). In particular,
-you may be interested in reading the
+For example, if you're interested in exploring Foundry in more detail, you should look at the
+[Foundry Book](https://book.getfoundry.sh/). In particular, you may be interested in reading the
 [Writing Tests](https://book.getfoundry.sh/forge/writing-tests.html) tutorial.
 
 ### Sensible Defaults
 
-This template comes with a set of sensible default configurations for you to
-use. These defaults can be found in the following files:
+This template comes with a set of sensible default configurations for you to use. These defaults can be found in the
+following files:
 
 ```text
 ├── .editorconfig
@@ -60,47 +53,39 @@ use. These defaults can be found in the following files:
 
 ### VSCode Integration
 
-This template is IDE agnostic, but for the best user experience, you may want to
-use it in VSCode alongside Nomic Foundation's
-[Solidity extension](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity).
+This template is IDE agnostic, but for the best user experience, you may want to use it in VSCode alongside Nomic
+Foundation's [Solidity extension](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity).
 
-For guidance on how to integrate a Foundry project in VSCode, please refer to
-this [guide](https://book.getfoundry.sh/config/vscode).
+For guidance on how to integrate a Foundry project in VSCode, please refer to this
+[guide](https://book.getfoundry.sh/config/vscode).
 
 ### GitHub Actions
 
-This template comes with GitHub Actions pre-configured. Your contracts will be
-linted and tested on every push and pull request made to the `main` branch.
+This template comes with GitHub Actions pre-configured. Your contracts will be linted and tested on every push and pull
+request made to the `main` branch.
 
-You can edit the CI script in
-[.github/workflows/ci.yml](./.github/workflows/ci.yml).
+You can edit the CI script in [.github/workflows/ci.yml](./.github/workflows/ci.yml).
 
 ## Installing Dependencies
 
-Foundry typically uses git submodules to manage dependencies, but this template
-uses Node.js packages because
+Foundry typically uses git submodules to manage dependencies, but this template uses Node.js packages because
 [submodules don't scale](https://twitter.com/PaulRBerg/status/1736695487057531328).
 
 This is how to install dependencies:
 
-1. Install the dependency using your preferred package manager, e.g.
-   `bun install dependency-name`
-   - Use this syntax to install from GitHub:
-     `bun install github:username/repo-name`
-2. Add a remapping for the dependency in [remappings.txt](./remappings.txt),
-   e.g. `dependency-name=node_modules/dependency-name`
+1. Install the dependency using your preferred package manager, e.g. `bun install dependency-name`
+   - Use this syntax to install from GitHub: `bun install github:username/repo-name`
+2. Add a remapping for the dependency in [remappings.txt](./remappings.txt), e.g.
+   `dependency-name=node_modules/dependency-name`
 
-Note that OpenZeppelin Contracts is pre-installed, so you can follow that as an
-example.
+Note that OpenZeppelin Contracts is pre-installed, so you can follow that as an example.
 
 ## Writing Tests
 
-To write a new test contract, you start by importing `Test` from `forge-std`,
-and then you inherit it in your test contract. Forge Std comes with a
-pre-instantiated [cheatcodes](https://book.getfoundry.sh/cheatcodes/)
-environment accessible via the `vm` property. If you would like to view the logs
-in the terminal output, you can add the `-vvv` flag and use
-[console.log](https://book.getfoundry.sh/faq?highlight=console.log#how-do-i-use-consolelog).
+To write a new test contract, you start by importing `Test` from `forge-std`, and then you inherit it in your test
+contract. Forge Std comes with a pre-instantiated [cheatcodes](https://book.getfoundry.sh/cheatcodes/) environment
+accessible via the `vm` property. If you would like to view the logs in the terminal output, you can add the `-vvv` flag
+and use [console.log](https://book.getfoundry.sh/faq?highlight=console.log#how-do-i-use-consolelog).
 
 This template comes with an example test contract [Foo.t.sol](./test/Foo.t.sol)
 
@@ -148,12 +133,11 @@ Deploy to Anvil:
 $ forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545
 ```
 
-For this script to work, you need to have a `MNEMONIC` environment variable set
-to a valid [BIP39 mnemonic](https://iancoleman.io/bip39/).
+For this script to work, you need to have a `MNEMONIC` environment variable set to a valid
+[BIP39 mnemonic](https://iancoleman.io/bip39/).
 
 For instructions on how to deploy to a testnet or mainnet, check out the
-[Solidity Scripting](https://book.getfoundry.sh/tutorials/solidity-scripting.html)
-tutorial.
+[Solidity Scripting](https://book.getfoundry.sh/tutorials/solidity-scripting.html) tutorial.
 
 ### Format
 
@@ -193,9 +177,8 @@ Generate test coverage and output result to the terminal:
 $ bun run test:coverage
 ```
 
-Generate test coverage with lcov report (you'll have to open the
-`./coverage/index.html` file in your browser, to do so simply copy paste the
-path):
+Generate test coverage with lcov report (you'll have to open the `./coverage/index.html` file in your browser, to do so
+simply copy paste the path):
 
 ```sh
 $ bun run test:coverage:report
