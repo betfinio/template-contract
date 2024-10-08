@@ -56,12 +56,6 @@ Foundation's [Solidity extension](https://marketplace.visualstudio.com/items?ite
 For guidance on how to integrate a Foundry project in VSCode, please refer to this
 [guide](https://book.getfoundry.sh/config/vscode).
 
-### GitHub Actions
-
-This template comes with GitHub Actions pre-configured. Your contracts will be linted and tested on every push and pull
-request made to the `main` branch.
-
-You can edit the CI script in [.github/workflows/ci.yml](./.github/workflows/ci.yml).
 
 ## Installing Dependencies
 
