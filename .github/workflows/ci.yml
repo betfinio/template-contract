@@ -8,7 +8,6 @@ env:
   CORE: ${{ vars.CORE }}
   PASS: ${{ vars.PASS }}
   RPC: ${{ vars.RPC }}
-
   FOUNDRY_PROFILE: "ci"
 
 on:
