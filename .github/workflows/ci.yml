@@ -1,7 +1,14 @@
 name: "CI"
 
 env:
-  API_KEY_ALCHEMY: ${{ secrets.API_KEY_ALCHEMY }}
+  CONSERVATIVE_STAKING: ${{ vars.CONSERVATIVE_STAKING }}
+  DEPLOYER: ${{ vars.DEPLOYER }}
+  PARTNER: ${{ vars.PARTNER }}
+  TOKEN: ${{ vars.TOKEN }}
+  CORE: ${{ vars.CORE }}
+  PASS: ${{ vars.PASS }}
+  RPC: ${{ vars.RPC }}
+
   FOUNDRY_PROFILE: "ci"
 
 on:
