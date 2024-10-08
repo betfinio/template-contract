@@ -4,8 +4,8 @@
 set -euo pipefail
 
 # Define the input vars
-GITHUB_REPOSITORY=${1?Error: Please pass username/repo, e.g. prb/foundry-template}
-GITHUB_REPOSITORY_OWNER=${2?Error: Please pass username, e.g. prb}
+GITHUB_REPOSITORY=${1?Error: Please pass username/repo, e.g. betfinio/template-contract}
+GITHUB_REPOSITORY_OWNER=${2?Error: Please pass username, e.g. betfinio}
 GITHUB_REPOSITORY_DESCRIPTION=${3:-""} # If null then replace with empty string
 
 echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
