@@ -24,7 +24,7 @@ contract ExampleTest is Test {
     // game
     GameExample public game;
 
-    address private deployer = vm.envAddress("DEPLOYER");
+    address private deployer = makeAddr("DEPLOYER");
 
     function setUp() public virtual {
         // connect to deployed contracts
