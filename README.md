@@ -116,6 +116,25 @@ Get a test coverage report:
 $ forge coverage
 ```
 
+# Viewing Code Coverage in IDE
+
+1. Generate the coverage report:
+```bash
+forge coverage --report lcov --contracts src/<ContractName>.sol
+```
+
+2. View the coverage:
+   - Install "Coverage Gutters" extension if you haven't already
+   - Open Command Palette (Cmd/Ctrl + Shift + P)
+   - Type and select "Coverage Gutters: Display Coverage"
+
+The coverage will be highlighted in your editor:
+- Green: Covered lines
+- Red: Uncovered lines
+- Yellow: Partially covered lines
+
+Note: Replace `<ContractName>` with your actual contract filename.
+
 ### Deploy
 
 Deploy to Anvil:
