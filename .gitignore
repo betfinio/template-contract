@@ -22,6 +22,8 @@ broadcast/*/31337/
 
 .env
 
+.env.*
+
 deno/
 
 

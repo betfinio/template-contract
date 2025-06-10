@@ -30,6 +30,10 @@
 		"lint:sol": "forge fmt --check && bun solhint \"{script,src,test}/**/*.sol\"",
 		"test": "forge test",
 		"test:coverage": "forge coverage",
-		"test:coverage:report": "forge coverage --report lcov"
+		"test:coverage:report": "forge coverage --report lcov",
+		"deploy:dev": "bash script/sh/deploy.sh dev",
+		"deploy:dev:broadcast": "bash script/sh/deploy.sh dev broadcast",
+		"deploy:prod": "bash script/sh/deploy.sh prod",
+		"deploy:prod:broadcast": "bash script/sh/deploy.sh prod broadcast"
 	}
 }
