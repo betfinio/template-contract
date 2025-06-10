@@ -194,6 +194,26 @@ simply copy paste the path):
 $ bun run test:coverage:report
 ```
 
+### Generate ABI
+
+To generate the ABI for a specific contract:
+
+```sh
+# Create abi directory if it doesn't exist
+$ mkdir -p abi
+
+# Generate ABI for a contract
+$ forge inspect --json <ContractName> abi > abi/<ContractName>ABI.json
+
+# Example for Token contract
+$ forge inspect --json Token abi > abi/TokenABI.json
+```
+
+The ABI will be saved in the `abi` directory with the format `<ContractName>ABI.json`. This is useful for:
+- Frontend integration
+- Contract verification
+- External contract interactions
+
 ## Related Efforts
 
 - [abigger87/femplate](https://github.com/abigger87/femplate)
